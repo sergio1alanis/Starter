@@ -1,0 +1,15 @@
+/Users/laclavees12345/Desktop/GuidedProject/Starter/bin/Debug/net7.0/Starter
+/Users/laclavees12345/Desktop/GuidedProject/Starter/bin/Debug/net7.0/Starter.deps.json
+/Users/laclavees12345/Desktop/GuidedProject/Starter/bin/Debug/net7.0/Starter.runtimeconfig.json
+/Users/laclavees12345/Desktop/GuidedProject/Starter/bin/Debug/net7.0/Starter.dll
+/Users/laclavees12345/Desktop/GuidedProject/Starter/bin/Debug/net7.0/Starter.pdb
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.csproj.AssemblyReference.cache
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.AssemblyInfoInputs.cache
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.AssemblyInfo.cs
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.csproj.CoreCompileInputs.cache
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.dll
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/refint/Starter.dll
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.pdb
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/Starter.genruntimeconfig.cache
+/Users/laclavees12345/Desktop/GuidedProject/Starter/obj/Debug/net7.0/ref/Starter.dll
