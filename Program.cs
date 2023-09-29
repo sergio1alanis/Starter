@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 // initialize variables - graded assignments 
 int examAssignments = 5;
@@ -20,38 +21,65 @@ int[] studentScores = new int[10];
 string currentStudentLetterGrade = "";
 
 
-Console.WriteLine("Student\t\tGrade\n");
+Console.WriteLine("Student\t\tExam Score\tOverall Grade\t Extra Credit\n");
 
 foreach (string name in studentNames)
 {
     string currentStudent = name;
 
     if (currentStudent == "Sophia")
+    {
         studentScores = sophiaScores;
+        
+    }
 
     else if (currentStudent == "Andrew")
+    { 
         studentScores = andrewScores;
-
+        
+    }
     else if (currentStudent == "Emma")
+    { 
         studentScores = emmaScores;
+        
+        
+    }
 
     else if (currentStudent == "Logan")
+    { 
         studentScores = loganScores;
+        
+    }
 
     else if (currentStudent == "Becky")
+    { 
         studentScores = beckyScores;
+    
+        
+    }
 
     else if (currentStudent == "Chris")
+    { 
         studentScores = chrisScores;
+        
+    }
 
     else if (currentStudent == "Eric")
+    { 
         studentScores = ericScores;
+        
+    }
 
     else if (currentStudent == "Gregor")
+    { 
         studentScores = gregorScores;
+        
+    }
 
     else
         continue;
+
+
 
     int sumAssignmentScores =0;
 
@@ -59,16 +87,21 @@ foreach (string name in studentNames)
 
     int gradeAssignments=0;
     
+    decimal exam =0;
 
     foreach (int score in studentScores)
     {
         gradeAssignments += 1;
 
         if(gradeAssignments <= examAssignments)
+        {
         sumAssignmentScores += score;
+        exam = (decimal)sumAssignmentScores/examAssignments; 
+        }
         else
         sumAssignmentScores += score /10;
     }
+
 
     currentStudentGrade = (decimal)sumAssignmentScores / examAssignments;
 
@@ -99,7 +132,22 @@ foreach (string name in studentNames)
     else 
         currentStudentLetterGrade = "F";
 
-    Console.WriteLine($"{currentStudent}:\t\t {currentStudentGrade} \t {currentStudentLetterGrade}");
+
+
+    decimal credit=0;
+    int extra=0;
+    int sumaParcial=0;
+    
+    foreach(int num in studentScores.Skip(5))
+    {
+        sumaParcial += num;
+    }
+    extra = (int)sumaParcial/(studentScores.Length - examAssignments);
+    credit = (decimal)(sumaParcial*.10)/examAssignments;
+    
+
+
+    Console.WriteLine($"{currentStudent}:\t\t {exam} \t\t{currentStudentGrade} \t {currentStudentLetterGrade}\t {extra} ({credit} pts)");
 }
 
 Console.WriteLine("Press the Enter key to continue");
